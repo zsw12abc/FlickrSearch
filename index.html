@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Flickr Search</title>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="search">
-    <input id="searchterm"/>
-    <button id="search">search</button>
-    <div id="results"></div>
-</div>
+<nav class="search navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Flickr Search</a>
+    <input  class="form-control col-8" id="searchterm"/>
+    <button class="btn btn-dark btn-outline-light col-2" id="search">search</button>
+</nav>
+<div class="card" id="results"></div>
 
 <!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
 <script src="js/jquery-3.2.1.min.js"></script>
