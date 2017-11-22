@@ -1,8 +1,16 @@
 $("#search").click(function () {
+    console.log("search working");
     $("#results").empty();
+    onSearch();
+});
+
+function onSearch() {
+    console.log("on searching");
+    var searchTag = $("#searchterm").val();
+    console.log(searchTag);
     $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
         {
-            tags: $("#searchterm").val(),
+            tags: searchTag,
             tagmode: "any",
             format: "json"
         },
@@ -31,4 +39,4 @@ $("#search").click(function () {
                 // if (i > 100) return false;
             });
         });
-});
+}

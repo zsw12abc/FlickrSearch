@@ -6,10 +6,10 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-<nav class="search navbar navbar-dark bg-dark">
+<nav id="flickr" class="search navbar navbar-dark bg-dark" onsubmit="submitFunction()">
     <a class="navbar-brand" href="#">Flickr Search</a>
-    <input  class="form-control col-8" id="searchterm"/>
-    <button class="btn btn-dark btn-outline-light col-2" id="search">search</button>
+    <input type="text" class="form-control col-8" id="searchterm"/>
+    <button type="submit" class="btn btn-dark btn-outline-light col-2" id="search">search</button>
 </nav>
 <div id="results" class="row"></div>
 
